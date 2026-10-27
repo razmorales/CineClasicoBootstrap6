@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivo del Cine Clásico Universal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-body fg-body">
+
+    <header>
+        <nav class="navbar lg:navbar-expand bg-1 shadow-sm py-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-lg" href="#hero">
+                    CineClásico<span class="fg-primary">.db</span>
+                </a>
+                <button class="navbar-toggler btn-icon" type="button" data-bs-toggle="drawer"
+                    data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false"
+                    aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                </button>
+                <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+                    <div class="drawer-header">
+                        <h2 class="drawer-title fs-lg" id="navbarDrawerLabel">Menú</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Cerrar menú"></button>
+                    </div>
+                    <div class="drawer-body mb-2 md:mb-0">
+                        <ul class="nav navbar-nav me-auto gap-2">
+                            <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#catalog">Catálogo</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#destacadas">Destacadas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#historia">Historia</a></li>
+                        </ul>
+                        <form class="hstack gap-2" role="search">
+                            <input class="form-control" type="search" placeholder="Buscar películas" aria-label="Buscar películas">
+                            <button class="btn-solid btn-icon theme-secondary" type="button" aria-label="Buscar">
+                                <i class="bi bi-search" aria-hidden="true"></i>
+                            </button>
+                            <a class="btn-outline theme-primary" href="#catalog">Mi Colección</a>
+                        </form>
+                    </div>
+                </dialog>
+                <div class="w-100 lg:d-none mt-3">
+                    <ul class="nav flex-wrap justify-content-center gap-1">
+                        <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#catalog">Catálogo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#destacadas">Destacadas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#historia">Historia</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero" class="bg-body fg-body py-4 md:py-5 mb-4 md:mb-5 border-bottom border-secondary">
+        <div class="container text-center px-4 py-3 md:py-4">
+            <div class="row justify-content-center">
+                <div class="lg:col-8">
+                    <span class="badge bg-primary text-uppercase px-3 md:px-5 py-2 mb-3 rounded-pill">Archivo Histórico
+                        Cinematográfico</span>
+                    <h1 class="fs-xl md:fs-2xl fw-bold mb-3">
+                        Grandes Obras Maestras del Séptimo Arte
+                    </h1>
+                    <p class="lead fg-body mb-3">
+                        Una travesía visual por los filmes que definieron el lenguaje
+                        narrativo, la dirección de arte y la banda sonora de la historia
+                        del cine.
+                    </p>
+                    <p id="historia" class="fg-secondary small mb-4">
+                        Desde el expresionismo mudo de los años 20 hasta la revolución del
+                        color y la ciencia ficción de culto. Explora fichas técnicas,
+                        géneros y calificaciones verificadas.
+                    </p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="#catalog" class="btn-solid theme-primary btn-lg px-4">Explorar Catálogo</a>
+                        <a href="#historia" class="btn-outline theme-primary btn-lg px-4">Saber más</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container px-4 py-4 md:py-5">
+        <section id="catalog" class="row g-5">
+            <div class="col-12 mb-2">
+                <h2 class="fs-xl md:fs-2xl fw-bold">Catálogo Principal de Películas</h2>
+                <p class="lead">Fichas de obras restauradas en alta definición</p>
+            </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+                <article id="destacadas" class="card p-4 h-100 d-flex justify-content-between">
+                    <div class="mb-3">
+                        <div class="small fg-secondary mb-2">Clásico Imperdible</div>
+                        <img src="img/casablanca.jpg" class="card-img rounded" alt="Cartel de Casablanca">
+                    </div>
+                    <div>
+                        <div class="my-2 d-flex justify-content-between">
+                            <span class="fg-primary">Drama / Romance</span>
+                            <span class="fg-warning">★ 9.2</span>
+                        </div>
+                        <h3 class="badge theme-success badge-outline fs-xl">Casablanca</h3>
+                        <p>Dirigida por <strong>Michael Curtiz</strong> (1942)</p>
+                        <p>
+                            En el Marruecos de la Segunda Guerra Mundial, el propietario de un club nocturno debe decidir si ayuda a su antiguo amor y a su esposo a ponerse a salvo.
+                        </p>
+                        <div class="card-footer d-flex align-items-center justify-content-between mt-3">
+                            <span class="small py-2">102 min</span>
+                            <button class="theme-primary btn-outline rounded-pill">
+                            Ver Ficha
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+                <article class="card p-4 h-100 d-flex justify-content-between">
+                    <div class="mb-3">
+                        <div class="small fg-secondary mb-2">Expresionismo Mudo</div>
+                        <img src="img/metropolis.jpg" class="card-img rounded" alt="Cartel de Metrópolis">
+                    </div>
+                    <div>
+                        <div class="my-2 d-flex justify-content-between">
+                            <span class="fg-primary">Sci-Fi / Silente</span>
+                            <span class="fg-warning">★ 8.3</span>
+                        </div>
+                        <h3 class="badge theme-success badge-outline fs-xl">Metrópolis</h3>
+                        <p>Dirigida por <strong>Fritz Lang</strong> (1927)</p>
+                        <p>
+                            En un futuro distópico dividido entre pensadores y trabajadores, el hijo del gobernante de la ciudad se enamora de una líder de la clase trabajadora.
+                        </p>
+                        <div class="card-footer d-flex align-items-center justify-content-between mt-3">
+                            <span class="small py-2">153 min</span>
+                            <button class="theme-primary btn-outline rounded-pill">
+                            Ver Ficha
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+                <article class="card p-4 h-100 d-flex justify-content-between">
+                    <div class="mb-3">
+                        <div class="small fg-secondary mb-2">Innovación Técnica</div>
+                        <img src="img/ciudadano_kane.jpg" class="card-img rounded" alt="Cartel de Ciudadano Kane">
+                    </div>
+                    <div>
+                        <div class="my-2 d-flex justify-content-between">
+                            <span class="fg-primary">Drama / Misterio</span>
+                            <span class="fg-warning">★ 8.9</span>
+                        </div>
+                        <h3 class="badge theme-success badge-outline fs-xl">Ciudadano Kane</h3>
+                        <p>Dirigida por <strong>Orson Welles</strong> (1941)</p>
+                        <p>
+                            Tras la muerte de un poderoso magnate de los medios de comunicación, un grupo de periodistas intenta descifrar el significado de sus últimas palabras: "Rosebud".
+                        </p>
+                        <div class="card-footer d-flex align-items-center justify-content-between mt-3">
+                            <span class="small py-2">119 min</span>
+                            <button class="theme-primary btn-outline rounded-pill">
+                            Ver Ficha
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                </div>
+                <div class="col-12 md:col-6 lg:col-4">
+                <article class="card p-4 h-100 d-flex justify-content-between">
+                    <div class="mb-3">
+                        <div class="small fg-secondary mb-2">Cine de Culto</div>
+                        <img src="img/odisea_2001.png" class="card-img rounded" alt="Cartel de 2001: Odisea del Espacio">
+                    </div>
+                    <div>
+                        <div class="my-2 d-flex justify-content-between">
+                            <span class="fg-primary">Sci-Fi / Filosófico</span>
+                            <span class="fg-warning">★ 9.0</span>
+                        </div>
+                        <h3 class="badge theme-success badge-outline fs-xl">2001: Odisea del Espacio</h3>
+                        <p>Dirigida por <strong>Stanley Kubrick</strong> (1968)</p>
+                        <p>
+                            Una enigmática estructura influye en la evolución humana antes de que una nave espacial sea enviada a Júpiter bajo el control de la inteligencia artificial HAL 9000.
+                        </p>
+                        <div class="card-footer d-flex align-items-center justify-content-between mt-3">
+                            <span class="small py-2">149 min</span>
+                            <button class="theme-primary btn-outline rounded-pill">
+                            Ver Ficha
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                </div>
+                <div class="col-12 md:col-6 lg:col-4">
+                <article class="card p-4 h-100 d-flex justify-content-between">
+                    <div class="mb-3">
+                        <div class="small fg-secondary mb-2">Era Dorada</div>
+                        <img src="img/cantando_bajo_la_lluvia.jpg" class="card-img rounded" alt="Cartel de Cantar bajo la lluvia">
+                    </div>
+                    <div>
+                        <div class="my-2 d-flex justify-content-between">
+                            <span class="fg-primary">Musical / Comedia</span>
+                            <span class="fg-warning">★ 8.3</span>
+                        </div>
+                        <h3 class="badge theme-success badge-outline fs-xl">Cantar bajo la lluvia</h3>
+                        <p>Dirigida por <strong>Gene Kelly & Stanley Donen</strong> (1952)</p>
+                        <p>
+                            Una compañía de producción cinematográfica y sus estrellas hacen la difícil transición del cine mudo al sonoro en Hollywood a finales de los años 20.
+                        </p>
+                        <div class="card-footer d-flex align-items-center justify-content-between mt-3">
+                            <span class="small py-2">103 min</span>
+                            <button class="theme-primary btn-outline rounded-pill">
+                            Ver Ficha
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                </div>
+                <div class="col-12 md:col-6 lg:col-4">
+                <article class="card p-4 h-100 d-flex justify-content-between">
+                    <div class="mb-3">
+                        <div class="small fg-secondary mb-2">Obra Cumbre</div>
+                        <img src="img/el_padrino.jpg" class="card-img rounded" alt="Cartel de El Padrino">
+                    </div>
+                    <div>
+                        <div class="my-2 d-flex justify-content-between">
+                            <span class="fg-primary">Policial / Drama</span>
+                            <span class="fg-warning">★ 9.2</span>
+                        </div>
+                        <h3 class="badge theme-success badge-outline fs-xl">El Padrino</h3>
+                        <p>Dirigida por <strong>Francis Ford Coppola</strong> (1972)</p>
+                        <p>
+                            El envejecido patriarca de una dinastía familiar transfiere el control de su organización a su reacio hijo menor.
+                        </p>
+                        <div class="card-footer d-flex align-items-center justify-content-between mt-3">
+                            <span class="small py-2">175 min</span>
+                            <button class="theme-primary btn-outline rounded-pill">
+                            Ver Ficha
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                </div>
+        </section>
+    </main>
+    <footer class="border-top border-secondary py-4">
+        <div class="container text-center small">
+            <p>&copy; 2026 Archivo del Cine Clásico. Práctica Académica de CSS3 Avanzado.</p>
+            <p>
+                <a href="#">Aviso Legal</a> | <a href="#">Documentación MDN</a> | <a href="#">W3C Selectors</a>
+            </p>
+        </div>
+    </footer>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
